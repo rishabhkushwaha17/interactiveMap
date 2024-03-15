@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="32" tileheight="32" infinite="1" nextlayerid="3" nextobjectid="5">
+ <tileset firstgid="1" source="download (3).tsx"/>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="1" gid="1" x="-383" y="761.333" width="814" height="624"/>
+  <object id="2" gid="4" x="366.333" y="760" width="814" height="624"/>
+  <object id="3" gid="3" x="234.333" y="346.667" width="814" height="624"/>
+  <object id="4" gid="2" x="-381.667" y="346.667" width="814" height="624"/>
+ </objectgroup>
+</map>

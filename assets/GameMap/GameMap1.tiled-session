@@ -1,0 +1,73 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "/Users/jasmeetsidhu/Documents/TileMapSetting/assets/GameMap1/GameMap1.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 1928,
+                "y": 1035.3333333333335
+            }
+        },
+        "/Users/jasmeetsidhu/Documents/TileMapSetting/assets/GameMap1/map_base.tsx": {
+            "scaleInDock": 1
+        },
+        "/Users/jasmeetsidhu/Documents/TileMapSetting/assets/GameMap1/smallBoundry.tsx": {
+            "scaleInDock": 1
+        },
+        "Boundry.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "GameMap1.tmx": {
+            "expandedObjectLayers": [
+                5
+            ],
+            "scale": 0.25,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 480,
+                "y": 78
+            }
+        },
+        "map_base.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "smallBoundry.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "/Users/jasmeetsidhu/Desktop/GameMap1",
+    "map.height": 167,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 167,
+    "openFiles": [
+    ],
+    "project": "GameMap1.tiled-project",
+    "recentFiles": [
+        "smallBoundry.tsx",
+        "map_base.tsx",
+        "GameMap1.tmx",
+        "/Users/jasmeetsidhu/Documents/TileMapSetting/assets/GameMap1/GameMap1.tmx",
+        "Boundry.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    },
+    "tileset.type": 0
+}
