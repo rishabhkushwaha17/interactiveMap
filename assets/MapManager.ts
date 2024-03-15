@@ -15,18 +15,23 @@ export class MapManager extends Component {
     onMouseWheel(e: EventMouse) {
         const delta = e.getScrollY();
         if (Math.ceil(delta) != this.previousValue) {
-            const zoomStep = delta * 0.5; // Adjust the zoom speed as needed
-            let newOrthoHeight = clamp(this.camera!.orthoHeight - zoomStep, this.minZoom, this.maxZoom);
-            let ui = this.node.getComponent(UITransform)
-            tween(this.camera.node).to(0.5, {
-                position: new Vec3(e.getUILocation().x - (ui.width * 0.5), e.getUILocation().y - (ui.height * 0.5), 0),
-            }, {
-                onStart: (target) => {
-                    tween(this.camera).to(0.5, { orthoHeight: newOrthoHeight }).start();
-                }
-            }).start();
-            // this.camera!.orthoHeight = newOrthoHeight;
-            this.previousValue = Math.ceil(delta);
+            let moveToValue = clamp(this.camera.orthoHeight - (e.getScrollY() * 2), this.minZoom, this.maxZoom);
+            console.log(e.getScrollY());
+            if (moveToValue >= this.minZoom && moveToValue < this.maxZoom) {
+                // this.node.getComponent(UITransform).convertToWorldSpaceAR(new Vec3())
+                let ui = this.node.getComponent(UITransform)
+                console.log(ui.width, ui.height, new Vec3(e.getUILocation().x - (ui.width * 0.5), e.getUILocation().y - (ui.height * 0.5), 0));
+                tween(this.camera.node).to(0.5, {
+                    position: new Vec3(e.getUILocation().x - (ui.width * this.node.scale.x * 0.5), e.getUILocation().y - (ui.height * this.node.scale.y * 0.5), 0),
+                }, {
+                    onStart: (target) => {
+
+
+                        tween(this.camera).to(1, { orthoHeight: moveToValue }).start();
+                    }
+                }).start();            // this.camera.orthoHeight = newValue;
+                // tween(this.camera).to(1, { orthoHeight: moveToValue }).start();
+            }
         }
     }
 
